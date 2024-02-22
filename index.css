@@ -124,7 +124,6 @@ body {
 
 .thirdsection-left {
     flex: 60%;
-    background: yellow;
 }
 
 .thirdsection-right {
@@ -215,3 +214,66 @@ h2 img {
     margin-right: 5px;
     height: 1em;
 }
+
+/* third section left side start here */
+
+.article-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.article-card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.article-card h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.article-card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.article-card  {
+    float: right;
+}
+
+.article-card p {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.article-card .author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.article-card .profile-pic {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.article-card .views {
+    display: flex;
+    align-items: center;
+}
+
+.article-card .views p {
+    margin-right: 10px;
+}
+
+.article-card .views img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
