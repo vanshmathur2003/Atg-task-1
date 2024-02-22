@@ -22,7 +22,7 @@ body {
     border-radius: 20px;
     background-color: #f2f2f2;
     padding: 5px 10px;
-    width: 400px; 
+    width: 400px;
 }
 
 .search-icon {
@@ -45,50 +45,91 @@ body {
 .free-text {
     color: #007bff;
     font-weight: bold;
-    
+
 }
-.navbar-action:hover{
+
+.navbar-action:hover {
     cursor: pointer;
 }
-.navbar-action-icon{
+
+.navbar-action-icon {
     padding-bottom: 3.5px;
 }
 
-/* modal css */
 
-/* Add this CSS to your existing styles or in a separate CSS file */
+/* 2nd section css starts here  */
 
-.modal-header {
-    border-bottom: none;
+.options-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    padding-top: 30px;
 }
 
-.modal-body {
-    padding: 30px;
+.left-options {
+    display: flex;
 }
 
-.form-group {
-    margin-bottom: 20px;
+.option {
+    font-weight: bold;
+    color: gray;
+    text-decoration: none;
+    cursor: pointer;
+    padding-right: 20px;
 }
 
-.btn-block {
-    border-radius: 25px;
+.right-options {
+    display: flex;
 }
 
-.btn-outline-primary, .btn-outline-danger {
-    background-color: #ffffff;
-    color: #007bff;
-    border-color: #007bff;
+.btn {
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.btn-outline-primary:hover, .btn-outline-danger:hover {
+.btn-btn-write-post {
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    margin-right: 10px;
+    border: none;
+}
+
+.btn-btn-write-post:hover {
+    color: gray;
+}
+
+
+.btn-join-group {
     background-color: #007bff;
-    color: #ffffff;
+    color: white;
+    border: none;
 }
 
-.btn-outline-primary:focus, .btn-outline-danger:focus {
-    box-shadow: none;
+/* 2nd section css ends here */
+
+/* 3rd section css start here */
+
+.thirdsection-container {
+    display: flex;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
-.text-center p {
-    margin-bottom: 0;
+.thirdsection-left {
+    flex: 60%;
+    background: yellow;
 }
+
+.thirdsection-right {
+    flex: 40%;
+    background-color: aqua;
+}
+
+/* 3rd section css ends here */
