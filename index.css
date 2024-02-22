@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.navbar-logo {
+    padding: 5px 10px;
+}
+
+.navbar-search {
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    padding: 5px 10px;
+    width: 400px; 
+}
+
+.search-icon {
+    margin-right: 5px;
+}
+
+.search-input {
+    border: none;
+    background: none;
+    outline: none;
+    flex: 1;
+}
+
+.navbar-action {
+    font-size: 0.9em;
+    color: #333333;
+    padding: 5px 10px;
+}
+
+.free-text {
+    color: #007bff;
+    font-weight: bold;
+    
+}
+.navbar-action:hover{
+    cursor: pointer;
+}
+.navbar-action-icon{
+    padding-bottom: 3.5px;
+}
+
+/* modal css */
+
+/* Add this CSS to your existing styles or in a separate CSS file */
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-body {
+    padding: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.btn-block {
+    border-radius: 25px;
+}
+
+.btn-outline-primary, .btn-outline-danger {
+    background-color: #ffffff;
+    color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-outline-primary:hover, .btn-outline-danger:hover {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.btn-outline-primary:focus, .btn-outline-danger:focus {
+    box-shadow: none;
+}
+
+.text-center p {
+    margin-bottom: 0;
+}

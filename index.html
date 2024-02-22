@@ -1,20 +1,103 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
-    <title>Task 1 By Vansh</title>
+
+    <title>Task by vansh</title>
 </head>
 
 <body>
+    <nav class="navbar">
+        <div class="navbar-logo"><img src="./assets/Navbar/whole.png" alt=""></div>
+        <div class="navbar-search">
+            <span class="search-icon"><img src="./assets/Navbar/Group 28.png" alt=""></span>
+            <input type="text" class="search-input" placeholder="Search for your favorite groups in ATG" />
+        </div>
+        <div class="navbar-action" data-target="#exampleModalCenter" data-toggle="modal">
+            Create Account, <span class="free-text">it's free</span>
+            <span><img class="navbar-action-icon" src="assets/Navbar/baseline-arrow_drop_down-24px.png"></span>
+        </div>
+    </nav>
+
+    <div>
+       <!-- signup modal -->
+        <div>
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div style="background-color: #d4edda; padding: 10px; border-radius: 5px; width: 100%;">
+                    <h6 class="modal-title text-center"
+                        style="color: #155724; font-size: 0.8em; font-weight: bold; margin-bottom: 10px;">Let's
+                        learn, share & inspire each other with our passion for computer engineering. Sign up now
+                        🤘🏼</h6>
+                </div>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 style="font-weight: bold; padding-bottom: 20px;">Create Account</h2>
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-md-6" style="padding-right: 5px;">
+                                    <input type="text" class="form-control" placeholder="First Name">
+                                </div>
+                                <div class="form-group col-md-6" style="padding-left: 5px;">
+                                    <input type="text" class="form-control" placeholder="Last Name">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Confirm Password">
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+                        </form>
+                        <button class="btn btn-outline-primary btn-block mt-3">Sign up with Facebook</button>
+                        <button class="btn btn-outline-danger btn-block">Sign up with Google</button>
+                    </div>
+                    <div class="col-md-6 text-center" style="padding-top: 50px; ">
+                        <div style="margin-bottom: 10px;">
+                        <p>Already have an account, <span
+                                style="color: #007bff; font-weight: bold;">sign in</span></p>
+                            </div>
+                        <img src="assets/login,signup/Group 3.png" alt="Image" class="img-fluid mt-3"
+                            style="max-width: 100%; height: auto;">
+                        <p style="margin-top: 20px; font-size: 0.60em; color: #000000;">By signing up, you agree to
+                            our Terms & conditions, Privacy policy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        </div>
+    </div>
 
 
 
 
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
