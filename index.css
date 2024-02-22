@@ -129,7 +129,89 @@ body {
 
 .thirdsection-right {
     flex: 40%;
-    background-color: aqua;
 }
 
 /* 3rd section css ends here */
+
+/* 3rd section right */
+.thirdsection-right {
+    flex: 40%;
+    padding: 20px;
+}
+
+.location-input {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+.location-input input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+.location-input .left-logo,
+.location-input .right-logo {
+    padding: 5px;
+}
+
+.location-input .right-logo {
+    margin-left: auto;
+}
+
+.small-text {
+    font-size: 0.8em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.follow-btn {
+    width: 80px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.see-more {
+    color: blue;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-left: 80%;
+}
+
+h2 {
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+}
+
+h2 img {
+    margin-right: 5px;
+    height: 1em;
+}
