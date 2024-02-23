@@ -25,6 +25,9 @@
             Create Account, <span class="free-text">it's free</span>
             <span><img class="navbar-action-icon" src="assets/Navbar/baseline-arrow_drop_down-24px.png"></span>
         </div>
+        <div class="navbar-mobile-action">
+            <div>...</div>
+        </div>
     </nav>
 
     <!-- modals -->
@@ -169,30 +172,32 @@
         </div>
     </div>
 
-    <!-- pc image with text -->
+    <!-- 1st section -->
     <section>
-        <img style="position: absolute;" src="/assets/Rest/Rectangle 2.png" alt="img 1">
-        <img style="position: absolute;" src="/assets/Rest/Rectangle 3.png" alt="img 2">
-        <div style="position: absolute; color: white; margin-left: 200px ; margin-top: 286px; ">
-            <h1>Computer Engineering</h1>
-            <h3>142,765 Computer Engineers follow this</h3>
+        <img class="fst-section-img" src="/assets/Rest/Rectangle 2.png" alt="img 1">
+        <img class="fst-section-img" src="/assets/Rest/Rectangle 3.png" alt="img 2">
+        <div class="fst-section-text">
+            <h1 class="fst-section-text-1">Computer Engineering</h1>
+            <h3 class="fst-section-text-2">142,765 Computer Engineers follow this</h3>
         </div>
     </section>
 
+
     <!-- 2nd section -->
-    <section
-        style="position: relative; margin-top: 440px; margin-right: 150px; margin-left: 150px; border-bottom: 1px solid rgb(205, 199, 199);">
+    <section class="sec-section">
         <div class="options-container">
             <div class="left-options">
-                <div class="option-active"
-                    style="margin-right: 20px;font-weight: bold;color: black;cursor: pointer; border-bottom: 2px solid black;">
+                <div class="option-active">
                     All Posts (32)</div>
                 <div class="option">Article</div>
                 <div class="option">Event</div>
                 <div class="option">Education</div>
                 <div class="option">Job</div>
             </div>
-            <div class="right-options">
+            <div>
+                <button class="btn-fltr">Filter: All</button>
+            </div>
+            <div class="sec-section-right-options">
                 <button class="btn-btn-write-post">Write post <img
                         src="/assets/Navbar/baseline-arrow_drop_down-24px.png" alt=""></button>
                 <button class="btn btn-join-group">Join Group</button>
@@ -200,154 +205,140 @@
         </div>
     </section>
 
+
+
     <!-- 3rd section -->
     <section style="position: relative; ">
         <div class="thirdsection-container">
             <!-- left -->
             <div class="thirdsection-left">
                 <!-- card 1 -->
-                <div style="margin-top: 20px;">
-                    <div class="article-card">
-                        <img src="/assets/3section-left/Rectangle 5.png" alt="Article Image">
-                        <h2 style="margin-top: 20px; margin-bottom: 1px;">✍🏻Article</h2>
-                        <div style="display: flex; ">
-                            <h2>What if famous brands had regular fonts? Meet RegulaBrands!</h2>
-                            <!-- popover -->
-                            <div>
-                                <button style="border: none; background: white ; font-size: 50px; margin-right: 20px; margin-bottom: 70px;" data-container="body" data-toggle="popover" data-placement="left"
-                                    data-content="Edit Report Option 3">...
-                                    <!-- <img style="height: 10px; width: 40px; margin-right: 30px ; margin-top: 10px;"
-                                        src="/assets/3section-left/Vector (1).png" alt="Three Dots" class="three-dots"> -->
-                                </button>
-                            </div>
-                            <!-- ends here -->
-                        </div>
-                        <p>I’ve worked in UX for the better part of a decade. From now on, I plan to rei…</p>
-                        <div style="display: flex; justify-content: space-between;">
-                            <div class="author">
-                                <img src="/assets/3section-left/Rectangle 3 (1).png" alt="Profile Picture"
-                                    class="profile-pic">
-                                <p>Siddhart Goyal</p>
-                            </div>
-                            <div class="views">
-                                <p> 👁️ 2.3 k Views</p>
-                                <img src="/assets/3section-left/Group 2.png" alt="Right Image" class="right-image">
-                            </div>
-                        </div>
-
+                <div class="postcard">
+                    <img class="postcardimg" src="/assets/3section-left/Rectangle 5.png" alt="img">
+                    <h2 class="postcardtitle1"> ✍🏻 Article</h2>
+                    <div class="postcardtitle2set">
+                        <h3 class="postcardtitle2">What if famous brands had regular fonts? Meet RegulaBrands!</h3>
+                        <button class="postcardtitle2btn" data-container="body" data-toggle="popover"
+                            data-placement="left" data-content="Edit Report Option 3">...
+                        </button>
                     </div>
+                    <h4 class="postcardtitle3">I’ve worked in UX for the better part of a decade. From now on, I plan to
+                        rei…</h4>
+                    <div class="postcardinfo2">
+                        <div>
+                            <span><img class="postcardinfoimg" src="/assets/3section-left/Rectangle 3 (1).png"
+                                    alt="dp"></span>
+                            <span>Siddharth Goyal</span>
+                        </div>
+                        <div>
+                            <span>👁️ 1.4k views</span>
+                            <span><img class="postcardinfoimg" src="/assets/3section-left/Group 2.png" alt=""></span>
+                        </div>
+                    </div>
+
                 </div>
-                <!-- card 2 -->
-                <div style="margin-top: 20px;">
-                    <div class="article-card">
-                        <img src="/assets/3section-left/Rectangle 5 (1).png" alt="Article Image">
-                        <h2 style="margin-top: 20px; margin-bottom: 3px;">🧬 Education</h2>
-                        <div style="display: flex; ">
-                            <h2>Tax Benefits for Investment under National Pension Scheme launched by Government</h2>
-                            <!-- popover -->
-                            <div>
-                                <button style="border: none; background: white ; font-size: 50px; margin-right: 20px; margin-bottom: 70px;" data-container="body" data-toggle="popover" data-placement="left"
-                                    data-content="Edit Report Option 3">...
-                                    <!-- <img style="height: 10px; width: 40px; margin-right: 30px ; margin-top: 10px;"
-                                        src="/assets/3section-left/Vector (1).png" alt="Three Dots" class="three-dots"> -->
-                                </button>
-                            </div>
-                            <!-- ends here -->
-                        </div>
-                        <p>I’ve worked in UX for the better part of a decade. From now on, I plan to rei…</p>
-                        <div style="display: flex; justify-content: space-between;">
-                            <div class="author">
-                                <img src="/assets/3section-left/Rectangle 3 (2).png" alt="Profile Picture"
-                                    class="profile-pic">
-                                <p>Sarah west</p>
-                            </div>
-                            <div class="views">
-                                <p> 👁️ 4.3 k Views</p>
-                                <img src="/assets/3section-left/Group 2.png" alt="Right Image" class="right-image">
-                            </div>
-                        </div>
 
+                <!-- card 2 -->
+                <div class="postcard">
+                    <img class="postcardimg" src="/assets/3section-left/Rectangle 5 (1).png" alt="img">
+                    <h2 class="postcardtitle1"> 🧬 Education</h2>
+                    <div class="postcardtitle2set">
+                        <h3 class="postcardtitle2">Tax Benefits for Investment under National Pension Scheme launched by
+                            Government</h3>
+                        <button class="postcardtitle2btn" data-container="body" data-toggle="popover"
+                            data-placement="left" data-content="Edit Report Option 3">...
+                        </button>
                     </div>
+                    <h4 class="postcardtitle3">I’ve worked in UX for the better part of a decade. From now on, I plan to
+                        rei…</h4>
+                    <div class="postcardinfo2">
+                        <div>
+                            <span><img class="postcardinfoimg" src="/assets/3section-left/Rectangle 3 (2).png"
+                                    alt="dp"></span>
+                            <span>asha gray</span>
+                        </div>
+                        <div>
+                            <span>👁️ 2.4k views</span>
+                            <span><img class="postcardinfoimg" src="/assets/3section-left/Group 2.png" alt=""></span>
+                        </div>
+                    </div>
+
                 </div>
                 <!-- card 3 -->
-                <div style="margin-top: 20px;">
-                    <div class="article-card">
-                        <img src="/assets/3section-left/Rectangle 5 (2).png" alt="Article Image">
-                        <h2 style="margin-top: 20px; margin-bottom: 3px;">🗓️ Meetup</h2>
-                        <div style="display: flex; justify-content: space-between; ">
-                            <h2>Finance & Investment Elite Social Mixer</h2>
-                           <!-- popover -->
-                           <div>
-                            <button style="border: none; background: white ; font-size: 50px; margin-right: 20px; margin-bottom: 70px;" data-container="body" data-toggle="popover" data-placement="left"
-                                data-content="Edit Report Option 3">...
-                                <!-- <img style="height: 10px; width: 40px; margin-right: 30px ; margin-top: 10px;"
-                                    src="/assets/3section-left/Vector (1).png" alt="Three Dots" class="three-dots"> -->
-                            </button>
-                        </div>
-                        <!-- ends here -->
-                        </div>
-                        <div style="display: flex; font-size: small ; margin-top: 20px;">
-                            <h3 style="margin-left: 20px;"> 📆 Fri,12Oct,2018</h3>
-                            <h3 style="margin-left: 150px;">📍 Ahmedabad, India</h3>
+                <div class="postcard">
+                    <img class="postcardimg" src="/assets/3section-left/Rectangle 5 (2).png" alt="img">
+                    <h2 class="postcardtitle1"> ❗️ Meeting </h2>
+                    <div class="postcardtitle2set">
+                        <h3 class="postcardtitle2">Finance & Investment Elite Social Mixer @Lujiazui
+                        </h3>
+                        <button class="postcardtitle2btn" data-container="body" data-toggle="popover"
+                            data-placement="left" data-content="Edit Report Option 3">...
+                        </button>
+                    </div>
+                    <div class="postcardtimelocation">
+                        <div>
+                            <span>📆 Fri,Oct,2018</span>
                         </div>
                         <div>
-                            <button
-                                style=" margin-bottom: 15px ; margin-top: 10px ; border-radius: 5px; background-color: white; color: red; border: 1px solid rgb(24, 24, 24); padding-left: 280px; padding-right: 280px; padding-top: 5px; padding-bottom: 5px;">Visit
-                                Website</button>
-                        </div>
-                        <div style="display: flex; justify-content: space-between;">
-                            <div class="author">
-                                <img src="/assets/3section-left/Rectangle 3 (3).png" alt="Profile Picture"
-                                    class="profile-pic">
-                                <p>Ronal Jones</p>
-                            </div>
-                            <div class="views">
-                                <p> 👁️ 1.3 k Views</p>
-                                <img src="/assets/3section-left/Group 2.png" alt="Right Image" class="right-image">
-                            </div>
+                            <span>📍 Gujrat, India</span>
                         </div>
 
                     </div>
+                    <div class="postcardtimelocationbtn">
+                        <button>Visit Website
+                        </button>
+                    </div>
+                    <div class="postcardinfo2">
+                        <div>
+                            <span><img class="postcardinfoimg" src="/assets/3section-left/Rectangle 3 (3).png"
+                                    alt="dp"></span>
+                            <span>Ronal jones</span>
+                        </div>
+                        <div>
+                            <span>👁️ 5.4k views</span>
+                            <span><img class="postcardinfoimg" src="/assets/3section-left/Group 2.png" alt=""></span>
+                        </div>
+                    </div>
+
                 </div>
                 <!-- card 4 -->
-                <div style="margin-top: 20px;">
-                    <div class="article-card">
-                        <h2 style="margin-top: 20px; margin-bottom: 3px;">📎 Job</h2>
-                        <div style="display: flex; justify-content: space-between; ">
-                            <h2>Software Developer</h2>
-                            <!-- popover -->
-                            <div>
-                                <button style="border: none; background: white ; font-size: 50px; margin-right: 20px; margin-bottom: 70px;" data-container="body" data-toggle="popover" data-placement="left"
-                                    data-content="Edit Report Option 3">...
-                                    <!-- <img style="height: 10px; width: 40px; margin-right: 30px ; margin-top: 10px;"
-                                        src="/assets/3section-left/Vector (1).png" alt="Three Dots" class="three-dots"> -->
-                                </button>
-                            </div>
-                            <!-- ends here -->
-                        </div>
-                        <div style="display: flex; font-size: small ; margin-top: 20px;">
-                            <h3 style="margin-left: 20px;"> 🗂️ Innovaccer Analytics Private Ltd.</h3>
-                            <h3 style="margin-left: 150px;">📍 Noida, India</h3>
+                <div class="postcard">
+
+                    <h2 class="postcardtitle1"> 🗂️ Job </h2>
+                    <div class="postcardtitle2set">
+                        <h3 class="postcardtitle2">Software Developer 2
+                        </h3>
+                        <button class="postcardtitle2btn" data-container="body" data-toggle="popover"
+                            data-placement="left" data-content="Edit Report Option 3">...
+                        </button>
+                    </div>
+                    <div class="postcardtimelocation">
+                        <div>
+                            <span>🗓️ Innovaccer Analytic...</span>
                         </div>
                         <div>
-                            <button
-                                style=" margin-bottom: 15px ; margin-top: 10px ; border-radius: 5px; background-color: white; color: green; border: 1px solid rgb(24, 24, 24); padding-left: 280px; padding-right: 280px; padding-top: 5px; padding-bottom: 5px;">Visit
-                                Website</button>
-                        </div>
-                        <div style="display: flex; justify-content: space-between;">
-                            <div class="author">
-                                <img src="/assets/3section-left/Rectangle 3 (4).png" alt="Profile Picture"
-                                    class="profile-pic">
-                                <p>Joseph Gray</p>
-                            </div>
-                            <div class="views">
-                                <p> 👁️ 1.3 k Views</p>
-                                <img src="/assets/3section-left/Group 2.png" alt="Right Image" class="right-image">
-                            </div>
+                            <span>📍 Noida, India</span>
                         </div>
 
                     </div>
+                    <div class="postcardtimelocationbtn2">
+                        <button>Apply on Times Job
+                        </button>
+                    </div>
+                    <div class="postcardinfo2">
+                        <div>
+                            <span><img class="postcardinfoimg" src="/assets/3section-left/Rectangle 3 (4).png"
+                                    alt="dp"></span>
+                            <span>joseph gray</span>
+                        </div>
+                        <div>
+                            <span>👁️ 5.4k views</span>
+                            <span><img class="postcardinfoimg" src="/assets/3section-left/Group 2.png" alt=""></span>
+                        </div>
+                    </div>
+
                 </div>
+
             </div>
             <!-- right -->
             <div class="thirdsection-right">
@@ -391,6 +382,137 @@
 
     </section>
 
+    <!-- Mobile Signup btn -->
+    <div class="mobilesignupbtn">
+        <button data-target="#exampleModalCentersignupmob1" data-toggle="modal" class="round-button">Signup</button>
+    </div>
+
+    <!-- modals.2-->
+    <div>
+        <!-- signup modal -->
+        <div>
+            <div class="modal fade" id="exampleModalCentersignupmob1" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h2 style="font-weight: bold; padding-bottom: 20px;">Create Account</h2>
+                                    <form>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6" style="padding-right: 5px;">
+                                                <input type="text" class="form-control" placeholder="First Name">
+                                            </div>
+                                            <div class="form-group col-md-6" style="padding-left: 5px;">
+                                                <input type="text" class="form-control" placeholder="Last Name">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder="Email">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" placeholder="Password">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" placeholder="Confirm Password">
+                                        </div>
+                                        <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+                                    </form>
+                                    <button class="btn btn-outline-primary btn-block mt-3"><img
+                                            style="padding-right: 5px; padding-bottom: 2px ;"
+                                            src="./assets/login,signup/f_logo_RGB-Blue_1024.png" alt="">Sign up with
+                                        Facebook</button>
+                                    <button class="btn btn-outline-danger btn-block"><img
+                                            style="padding-right: 5px; padding-bottom: 2px ;"
+                                            src="/assets/login,signup/search.png" alt=""> Sign up with Google</button>
+                                </div>
+                                <div class="col-md-6 text-center" style="padding-top: 50px; ">
+                                    <div style="margin-bottom: 10px;">
+                                        <p>Already have an account, <span data-dismiss="modal" aria-label="Close"
+                                                data-target="#exampleModalCenterloginmob2" data-toggle="modal"
+                                                style="color: #007bff; font-weight: bold; cursor: pointer;  ">sign
+                                                in</span></p>
+                                    </div>
+                                    <p style="margin-top: 20px; font-size: 0.60em; color: #000000;">By signing up, you
+                                        agree to
+                                        our Terms & conditions, Privacy policy</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- login modal -->
+        <div>
+            <div class="modal fade" id="exampleModalCenterloginmob2" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h2 style="font-weight: bold; padding-bottom: 20px;">Sign in</h2>
+                                    <form>
+
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder="Email">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" placeholder="Password">
+                                        </div>
+
+                                        <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+                                    </form>
+                                    <button class="btn btn-outline-primary btn-block mt-3"><img
+                                            style="padding-right: 5px; padding-bottom: 2px ;"
+                                            src="./assets/login,signup/f_logo_RGB-Blue_1024.png" alt="">Sign in with
+                                        Facebook</button>
+                                    <button class="btn btn-outline-danger btn-block"><img
+                                            style="padding-right: 5px; padding-bottom: 2px ;"
+                                            src="/assets/login,signup/search.png" alt=""> Sign in with Google</button>
+                                    <div>
+                                        <h2 style="padding-left: 100px; padding-top: 50px; font-size: 20px;">Forgot
+                                            Password? </h2>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 text-center" style="padding-top: 50px; ">
+                                    <div style="margin-bottom: 10px;">
+                                        <p>Don’t have an account yet? <span data-dismiss="modal" aria-label="Close"
+                                                data-target="#exampleModalCentersignupmob1" data-toggle="modal"
+                                                style="color: #007bff; font-weight: bold; cursor: pointer;">Create new
+                                                for free!</span>
+                                        </p>
+                                    </div>
+
+                                    <p style="margin-top: 20px; font-size: 0.60em; color: #000000;">By signing in, you
+                                        agree to
+                                        our Terms & conditions, Privacy policy</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    </div>
 
 
 

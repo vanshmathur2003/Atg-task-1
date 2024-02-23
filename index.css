@@ -4,6 +4,8 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* navbar css start here */
+
 .navbar {
     background-color: #ffffff;
     display: flex;
@@ -39,7 +41,7 @@ body {
 .navbar-action {
     font-size: 0.9em;
     color: #333333;
-    padding: 5px 10px;
+    padding: 1% 2%;
 }
 
 .free-text {
@@ -56,8 +58,73 @@ body {
     padding-bottom: 3.5px;
 }
 
+.navbar-mobile-action {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .navbar-search {
+        display: none;
+    }
+
+    .navbar-mobile-action {
+        display: block;
+        text-align: right;
+        font-size: xx-large;
+        margin-bottom: 1px;
+    }
+
+
+}
+
+@media (max-width: 900px) {
+    .navbar-action {
+        display: none;
+    }
+}
+
+/* navbar css ends here  */
+
+
+/* 1st section start here */
+
+.fst-section-img {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    margin-right: 0;
+
+}
+
+.fst-section-text {
+    position: absolute;
+    color: white;
+    margin-top: 17%;
+    margin-left: 5%;
+
+}
+
+.fst-section-text-1 {
+    font-size: 4vw;
+}
+
+.fst-section-text-2 {
+    font-size: 2vw;
+}
+
+
+/* 1st end here */
 
 /* 2nd section css starts here  */
+
+.sec-section {
+    position: relative;
+    margin-top: 31%;
+    margin-right: 15%;
+    margin-left: 15%;
+    border-bottom: 1px solid rgb(205, 199, 199);
+}
+
 
 .options-container {
     display: flex;
@@ -78,10 +145,10 @@ body {
     color: gray;
     text-decoration: none;
     cursor: pointer;
-    padding-right: 20px;
+    padding-left: 20px;
 }
 
-.right-options {
+.sec-section-right-options {
     display: flex;
 }
 
@@ -112,14 +179,59 @@ body {
     border: none;
 }
 
+.btn-fltr {
+    display: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    margin-right: 10px;
+    border: none;
+}
+
+.option-active {
+    margin-right: 0;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+}
+
+@media (max-width: 990px) {
+    .sec-section-right-options {
+        display: none;
+    }
+}
+
+@media (max-width: 750px) {
+    .option {
+        display: none;
+    }
+
+    .btn-fltr {
+        display: block;
+    }
+
+    .sec-section {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .options-container {
+        padding-top: 5px;
+    }
+
+}
+
 /* 2nd section css ends here */
 
 /* 3rd section css start here */
 
 .thirdsection-container {
     display: flex;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .thirdsection-left {
@@ -215,65 +327,154 @@ h2 img {
     height: 1em;
 }
 
+@media(max-width:1250px) {
+    .thirdsection-right {
+        display: none;
+    }
+
+    .thirdsection-left {
+        margin-left: 1%;
+    }
+
+    .postcardtitle2btn {
+        margin-right: 1%;
+    }
+}
+
 /* third section left side start here */
-
-.article-card {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 20px;
+.test {
+    display: none;
 }
 
-.article-card img {
+/* card css */
+
+.postcard {
+    background-color: f;
+    border: 1px solid black;
+    margin: 5%;
+    border-radius: 1%;
+
+}
+
+.postcardinfo2 {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 3%;
+    margin-left: 3%;
+    margin-top: 4%;
+    margin-bottom: 2%;
+    font-size: 1vw;
+}
+
+.postcardimg {
     width: 100%;
+}
+
+.postcardtitle1 {
+    font-size: 2.5vw;
+    padding-left: 3%;
+    padding-top: 3%;
+}
+
+.postcardtitle2set {
+    display: flex;
+    justify-content: space-between;
+}
+
+.postcardtitle2btn {
+    border: none;
+    background-color: white;
+    font-size: 2.5vw;
+    padding-right: 4%;
+}
+
+
+.postcardtitle2 {
+    font-weight: bolder;
+    font-size: 1.5vw;
+    padding-left: 3%;
+    padding-top: 1%;
+}
+
+.postcardtitle3 {
+    font-weight: 300;
+    font-size: 1vw;
+    padding-left: 3%;
+    padding-top: 3%;
+}
+
+.postcardinfoimg {
+    height: 2vw;
+}
+
+.postcardtimelocation {
+    font-size: 1vw;
+    display: flex;
+    margin-left: 3%;
+    gap: 50px;
+}
+
+.postcardtimelocationbtn,
+.postcardtimelocationbtn2 {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    font-size: 1vw;
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin: 0 5%;
+
 }
 
-.article-card h3 {
-    font-size: 1.2em;
-    margin-bottom: 5px;
+.postcardtimelocationbtn2>button {
+    padding: 1.5% 0;
+    color: green;
+    border: none;
+    background-color: white;
 }
 
-.article-card h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
+.postcardtimelocationbtn>button {
+    padding: 1.5% 0;
+    color: red;
+    border: none;
+    background-color: white;
 }
 
-.article-card  {
-    float: right;
+
+
+@media (max-width:750px) {
+    .thirdsection-left {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .thirdsection-container {
+        margin-left: 0%;
+        margin-right: 0%;
+
+    }
+
 }
 
-.article-card p {
-    font-size: 0.9em;
-    margin-bottom: 10px;
-}
+/* the mobile create acc btn  */
 
-.article-card .author {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.article-card .profile-pic {
-    width: 30px;
-    height: 30px;
+.round-button {
+    position: fixed;
+    bottom: 2%;
+    right: 5%;
+    width: 15vw;
+    height: 7vh;
     border-radius: 50%;
-    margin-right: 10px;
+    background-color: rgb(214, 93, 93);
+    border : none;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.2em;
+    display: none;
 }
 
-.article-card .views {
-    display: flex;
-    align-items: center;
+@media (max-width: 750px) {
+    .round-button {
+        display: block;
+    }
 }
-
-.article-card .views p {
-    margin-right: 10px;
-}
-
-.article-card .views img {
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-}
-
